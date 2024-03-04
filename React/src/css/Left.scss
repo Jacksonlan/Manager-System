@@ -1,0 +1,32 @@
+.Left{
+    width: 180px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(78, 78, 78);
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+@mixin t{
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+}
+.top{
+    @include t;
+}
+.subject{
+    @include t;
+}
+.title{
+    @include t;
+    background-color: rgb(41, 41, 41);
+    border-left: 5px solid rgb(5, 214, 5);
+}
+.subject:hover{
+   @extend .title;
+}
+
